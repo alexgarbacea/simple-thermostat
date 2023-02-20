@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/simple-thermostat/static/css/main.319ab614.css",
+    "main.js": "/simple-thermostat/static/js/main.69e0f921.js",
+    "static/js/787.55327fb9.chunk.js": "/simple-thermostat/static/js/787.55327fb9.chunk.js",
+    "index.html": "/simple-thermostat/index.html",
+    "main.319ab614.css.map": "/simple-thermostat/static/css/main.319ab614.css.map",
+    "main.69e0f921.js.map": "/simple-thermostat/static/js/main.69e0f921.js.map",
+    "787.55327fb9.chunk.js.map": "/simple-thermostat/static/js/787.55327fb9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.319ab614.css",
+    "static/js/main.69e0f921.js"
+  ]
+}
