@@ -1,0 +1,98 @@
+$ContrastColor: #61dafb
+
+$MainDark: #282c34
+
+$GrayColor: #E2E3EC
+
+$TextColor: #ffffff
+    
+body 
+    user-select: none
+    background-color: #fdfdfd
+    color: $TextColor
+
+.App
+    height: 100%
+    text-align: center
+    display: flex
+    justify-content: center
+
+.circle
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+
+.thermostat
+    margin-block: 30vh
+    @extend .circle
+    background-color: $MainDark
+    height: 350px
+    width: 350px
+
+.inner-circle
+    @extend .circle
+    height: 270px
+    width: 270px
+    background-color: $GrayColor
+    display: flex
+    align-items: center
+    justify-content: center
+    &>*
+        min-width: 40px
+
+.arrows
+    margin-left: 2px
+    display: flex
+    flex-direction: column
+    font-size: xx-large
+    align-items: center
+    gap: 20px
+    &>*
+        padding: 3px
+        height: 40px
+        width: 40px
+        @extend .circle
+        background-color: $MainDark
+        cursor: pointer
+        &:hover
+            scale: (1.05)
+
+.temp
+    &::after
+        content: "\00B0"
+
+.display
+    border-radius: 30%
+    background-color: $ContrastColor
+    width: 170px
+    height: 170px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &>*
+        margin: 0
+
+.big-temp
+    @extend .temp
+    font-size: 70px
+    font-weight: bolder
+
+.left-info
+    display: flex
+    justify-content: flex-end
+
+.progress-temp
+    margin-right: 10px
+    background-color: $MainDark
+    border-radius: 13px
+    height: 150px
+    width: 10px
+    display: flex
+    align-items: flex-end
+    &>div
+        background-color: orange
+        width: 10px
+        height: 0%
+        border-radius: 10px
+        transition: .5s ease-in-out
